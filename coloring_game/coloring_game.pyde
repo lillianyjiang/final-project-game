@@ -138,7 +138,6 @@ def mouseInRect(x, y, x2, y2):
     
 def mousePressed():
     # runs once each time mouse is pressed
-    
     #for orange_triangle
     if mouseX < width/7.5 and mouseY < height/5:
         orange_triangle.setFill(color(29, 91, 84))
@@ -151,8 +150,24 @@ def mousePressed():
     if mouseInRect(500,100,600,200):
         pink_square.setFill(color(305, 24, 100))
 
+    #for purple_rectangle
+    if mouseInRect(80,60,180,120):
+        purple_rectangle.setFill(color(150,40,100))
+    
     #for green_rectangle 
     if mouseInRect(250, 100, 300, 200):
         green_rectangle.setFill(color(143, 71, 63))
+        
+    #for yellow_circle
+    if dist(mouseX,mouseY, 100,300) < 60 :
+        yellow_circle.setFill(color(255,255,0))
+        
+    # for a pink_circle
+    if dist(mouseX,mouseY, 500,300) < 50 :
+        pink_circle.setFill(color(143, 71 ,63))
+        
+    # for a blue circle
+    if dist(mouseX, mouseY, 300, 200) <40:
+        blue_circle.setFill(color(143, 71 ,63))
         
     
