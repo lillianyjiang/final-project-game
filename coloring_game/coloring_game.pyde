@@ -1,5 +1,8 @@
 hue = 0
+count = 0
+colored = []
 
+# function to create a circle 
 def create_circle(x, y, radius, fill_color, stroke_color):
     custom_circle = createShape(ELLIPSE, x, y, radius * 2, radius * 2)
     custom_circle.fill(fill_color)
@@ -7,7 +10,7 @@ def create_circle(x, y, radius, fill_color, stroke_color):
     custom_circle.endShape()
     return custom_circle
 
-
+# function for creating the shapes
 def setup():
     global orange_triangle
     global yellow_triangle
@@ -20,7 +23,7 @@ def setup():
     global yellow_circle
     global pink_circle
     global blue_circle
-    global blue_zigzag
+    global red_circle
     global reset_button
     
     size(600,400)
@@ -137,19 +140,9 @@ def setup():
     # create a blue circle 
     blue_circle = create_circle(300, 200, 40, color(195), color(0))
     
-    #create a blue zigzag 
-    blue_zigzag = createShape()
-    blue_zigzag.beginShape()
-    blue_zigzag.fill(color(0, 0, 100))
-    blue_zigzag.stroke(color(187, 23, 90))
-    blue_zigzag.vertex(200, 20)
-    blue_zigzag.vertex(220, 30)
-    blue_zigzag.vertex(220, 50)
-    blue_zigzag.vertex(240, 70)
-    blue_zigzag.vertex(240, 90)
-    blue_zigzag.vertex(200, 50)
-    blue_zigzag.vertex(200, 20)
-    blue_zigzag.endShape()
+    #create a red circle 
+    red_circle = create_circle(250, 50, 30, color(195), color(0))
+
     
     #create a reset button
     reset_button= createShape()
@@ -164,8 +157,15 @@ def setup():
     reset_button.vertex(600,0)
     reset_button.endShape()
     
+    for i in range(12):
+        colored.append(False)
+    
+#function for drawing the shapes
 def draw():
-    background(color(0, 0, 100));
+    if count == 12: 
+        background(color(5,55,100))
+    else:
+        background(color(0, 0, 100));
     shape(orange_triangle)
     shape(yellow_triangle)
     shape(purple_triangle)
@@ -177,64 +177,103 @@ def draw():
     shape(yellow_circle)
     shape(pink_circle)
     shape(blue_circle)
-    shape(blue_zigzag)
+    shape(red_circle)
     shape(reset_button)
-    textSize(32)
+    textSize(20)
     fill(0)
-    text("reset", 10, 30)
+    text("reset", 550, 20)
     
+# function for coloring an object in a rectangle 
 def mouseInRect(x, y, x2, y2):
     return mouseY > y and mouseY < y2 and mouseX > x and mouseX < x2
     
+# runs once each time mouse is pressed
 def mousePressed():
-    # runs once each time mouse is pressed
-
+    global count
+    
     #for orange_triangle
     if mouseX < width/7.5 and mouseY < height/5:
         orange_triangle.setFill(color(33, 100, 100))
+        if not colored[0]:
+            count += 1
+            colored[0] = True
         
     # for a yellow triangle 
     if dist(mouseX,mouseY, 450,62.5) < 25 :
         yellow_triangle.setFill(color(60, 100, 100))
+        if not colored[1]:
+            count += 1
+            colored[1] = True
         
     # for a purple triangle 
     if dist(mouseX,mouseY, 330,320) < 25 :
         purple_triangle.setFill(color(249, 56, 93))
+        if not colored[2]:
+            count += 1
+            colored[2] = True
 
     # for a green triangle 
     if dist(mouseX,mouseY, 425,200) < 25 :
         green_triangle.setFill(color(120, 39, 98))
-    
+        if not colored[3]:
+            count += 1
+            colored[3] = True
     #for blue_square
     if mouseInRect(100, 200, 200, 300):
         blue_square.setFill(color(207, 61, 71))
+        if not colored[4]:
+            count += 1
+            colored[4] = True
 
     #for pink_square
     if mouseInRect(500,100,600,200):
         pink_square.setFill(color(305, 24, 100))
+        if not colored[5]:
+            count += 1
+            colored[5] = True
 
     #for purple_rectangle
     if mouseInRect(80,60,180,120):
         purple_rectangle.setFill(color(300, 100, 50))
+        if not colored[6]:
+            count += 1
+            colored[6] = True
     
     #for green_rectangle 
     if mouseInRect(250, 100, 300, 200):
         green_rectangle.setFill(color(143, 71, 63))
+        if not colored[7]:
+            count += 1
+            colored[7] = True
         
     #for yellow_circle
     if dist(mouseX,mouseY, 100,300) < 60 :
         yellow_circle.setFill(color(60, 100, 100))
+        if not colored[8]:
+            count += 1
+            colored[8] = True
         
     # for a pink_circle
     if dist(mouseX,mouseY, 500,300) < 50 :
         pink_circle.setFill(color(340, 49, 86))
+        if not colored[9]:
+            count += 1
+            colored[9] = True
         
     # for a blue circle
     if dist(mouseX, mouseY, 300, 200) <40:
         blue_circle.setFill(color(195, 100, 100))
+        if not colored[10]:
+            count += 1
+            colored[10] = True
         
-    # for a blue_zigzag 
-    
+    # for a red circle
+    if dist(mouseX, mouseY, 250, 50) <30:
+        red_circle.setFill(color(348, 91, 86))
+        if not colored[11]:
+            count += 1
+            colored[11] = True
+        
     # a reset button 
     if mouseInRect(550,0,600,25):
         orange_triangle.setFill(color(0, 0, 100))
@@ -248,6 +287,8 @@ def mousePressed():
         yellow_circle.setFill(color(0, 0, 100))
         pink_circle.setFill(color(0, 0, 100))
         blue_circle.setFill(color(0, 0, 100))
+        red_circle.setFill(color(0,0,100))
         
-        
-    
+        for i in range(12):
+            colored[i] = False
+        count = 0
