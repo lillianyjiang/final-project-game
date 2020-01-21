@@ -1,4 +1,4 @@
-# Final Documentation
+# Final Documentation- Lillian Jiang 
 
 All documentation is to be included in your repository.
 
@@ -7,9 +7,21 @@ Due at final exam period:
 * Code - fully commented!
 * Presentation
 * Flowchart
-* README/GitHub Pages website
+* README/GitHub Pageghghghs website
 
-## Documentation Details
+## Color Shapes
+Color Shapes is a therapeutic game in which you are able to color shapes by clicking your mouse in the shape. When the game first starts, there are blank shapes outlined in colors. By clicking the mouse in each shape you are able to color the shape with the color that it is on the outline. After you have finished coloring all the shapes, you will see that you have colored shapes that look retro and the background will turn a salmon color.
+
+### Citations
+Lillian Jiang
+Mrs. Gerstein 
+Introduction to Programming
+24 January 2020
+Works Cited
+Peyton, Miles, et al. “Python Mode for Processing.” Back to Python Mode, py.processing.org/.
+Reas, Casey, et al. “Processing.py Reference. Processing Is Not a Single Programming Language, but an Arts-Centric System for Learning, Teaching, and Making Visual Form with Code. This Reference Documents Its Python Mode.” Back to Python Mode, py.processing.org/reference/.
+Rgb.to. “HTML Color Codes Names to RGB, Hex, Pantone, RAL, HSL, HSV, HSB, JSON.” Rgb.to Color Conversion, rgb.to/html-color-codes/3.
+
 
 ### Website
 
