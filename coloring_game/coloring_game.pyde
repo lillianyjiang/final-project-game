@@ -1,4 +1,6 @@
 hue = 0
+# count stores how many elements have been filled in
+# every time you fill in a shape it updates the color array 
 count = 0
 colored = []
 
@@ -67,7 +69,7 @@ def setup():
     purple_triangle.vertex(300,300)
     purple_triangle.endShape()
     
-    # create a light green triangle
+    # create a green triangle
     green_triangle = createShape()
     green_triangle.beginShape()
     green_triangle.fill(color(0,0,100))
@@ -162,6 +164,7 @@ def setup():
     
 #function for drawing the shapes
 def draw():
+    # when all the shapes have been filled in (the count is full) it sets the background color as salmon 
     if count == 12: 
         background(color(5,55,100))
     else:
