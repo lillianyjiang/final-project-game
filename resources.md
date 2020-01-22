@@ -1,19 +1,15 @@
-# Resources
+# Works Cited
 
-## Pygame
+Lillian Jiang
 
-* [Official Documentation](https://www.pygame.org/docs/)
+Mrs. Gerstein 
 
-## Previous Projects
+Introduction to Programming
 
-I'm including a few links to earlier projects. If you want to try playing them, you'll need to clone them (but you already know how, right?). There were plenty of other good projects, but I wanted to limit the list to a reasonable size.
+24 January 2020
 
-* [All You Knead is Love](https://github.com/aicollazo/FinalProject18)
-* [Productivity Clicker](https://github.com/arocha23/FinalProject18)
-* [History Trivia](https://github.com/cfesta/FinalProject18)
-* [Gacha Game](https://github.com/csaguil1/FinalProject18)
-* [Fire Emblem: Let's Get This Bread](https://github.com/iyee20/FinalProject18)
-* [Memory Game](https://github.com/MayaGK/FinalProject18)
-* [Ikea Adventure](https://github.com/nikkiwizard/FinalProject18)
-* [Missing From Magnet](https://github.com/bpayami/FinalProject17)
-* [Magnet Text Adventure](https://github.com/nomadder/FinalProject17)
+Works Cited
+
+Peyton, Miles, et al. “Python Mode for Processing.” Back to Python Mode, py.processing.org/.
+Reas, Casey, et al. “Processing.py Reference. Processing Is Not a Single Programming Language, but an Arts-Centric System for Learning, Teaching, and Making Visual Form with Code. This Reference Documents Its Python Mode.” Back to Python Mode, py.processing.org/reference/.
+Rgb.to. “HTML Color Codes Names to RGB, Hex, Pantone, RAL, HSL, HSV, HSB, JSON.” Rgb.to Color Conversion, rgb.to/html-color-codes/3.
