@@ -1,15 +1,13 @@
-# Final Documentation
+# Final Documentation- Lillian Jiang 
 
-All documentation is to be included in your repository.
+## Color Shapes
+Color Shapes is a therapeutic game in which you are able to color shapes by clicking your mouse in the shape. When the game first starts, there are blank shapes outlined in colors. By clicking the mouse in each shape you are able to color the shape with the color that it is on the outline. After you have finished coloring all the shapes, you will see that you have colored shapes that look retro and the background will turn a salmon color.
 
-Due at final exam period:
+### Directions
+1. Press run
+2. Click on the shapes to color them in
+3. Click on the reset button to reset the colors of the shapes to blank and start the game over again! 
 
-* Code - fully commented!
-* Presentation
-* Flowchart
-* README/GitHub Pages website
-
-## Documentation Details
 
 ### Website
 
@@ -29,11 +27,6 @@ Please note that this may be a single page, but can be split into multiple pages
 * Should depict how the code runs
 * If you need help, see me
 * Please ensure that your flowchart is clear, easy to read, and does not require any special permissions to access. I strongly recommend a `.jpg` or `.png` file if you are scanning a hand-drawn flowchart, or a `.pdf` file for a digital flowchart
-
-### Code
-
-* Remember to comment your code
-* Each function and class should have a docstring at the start of the block of code to describe what it does
 
 ### Presentation
 
