@@ -8,8 +8,6 @@ Color Shapes is a therapeutic game in which you are able to color shapes by clic
 2. Click on the shapes to color them in
 3. Click on the reset button to reset the colors of the shapes to blank and start the game over again!
 
-## Flowchart
-
 ## Citations
 Lillian Jiang
 
@@ -29,5 +27,6 @@ Rgb.to. “HTML Color Codes Names to RGB, Hex, Pantone, RAL, HSL, HSV, HSB, JSON
 
 ## Links
 
+* [Flowchart](Coloring Game Flowchart (1).pdf.md)
 * [Documentation](documentation.md)
 * [Resources](resources.md)
