@@ -28,3 +28,4 @@ Rgb.to. “HTML Color Codes Names to RGB, Hex, Pantone, RAL, HSL, HSV, HSB, JSON
 ## Links
 
 * [Flowchart](ColoringGameFlowchart.pdf)
+* [Presentation] https://docs.google.com/presentation/d/11Hzr1yUk2D5g23ttKtCrNnV_FBVObUY360rmsNTrKM0/edit?usp=sharing
